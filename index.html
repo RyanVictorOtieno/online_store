@@ -1,3 +1,4 @@
+<!-- TO FIX MORE STYLING BUGS!! KUDOSSS -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,11 +6,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta  http-equiv="X-UA-Compatible" content="ie-edge">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<!-- toggle the nav bar from side javascript here -->
+	<script>
+		$(document).ready(function(){
+			$("#icon").click(function(){
+				$("ul").toggleClass("show");
+			});
+		});
+	</script>
 	<link rel="stylesheet" type="text/css" href="phones.css">
-	<title>Pop Up Box</title>
+	<title>Phone Store</title>
 </head>
 <body>
+<!-- Navigation Bar -->
+<nav>
+	<label class="logo">Phone Mania</label>
+	<ul class="menutabs">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#">Accessories</a></li>
+		<li><a href="#">services</a></li>
+		<li><a href="#">About Us</a></li>
 
+	</ul>
+	<label id="icon">
+		<i class="fas fa-bars"></i>
+	</label>
+</nav>
+<!-- Navigation Bar end -->
+<!-- Product Display Section  -->
 	<section class="Products">
 		<div class="container">
 			<div class="row">
@@ -25,8 +50,8 @@
 								<div class="item-inner">
 									<h3>Huawei Y6</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation.</p>
 								<center>
 						 			<img src="resources/iphone7.png" alt="img" style="width: 50%; height: 50%;">
 						 		</center>
@@ -56,7 +81,9 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation.</p>
-								<img src="resources/iphone7.png" alt="img" style="width: 50%; height: 50%;">
+								<center>
+						 			<img src="resources/iphone7.png" alt="img" style="width: 50%; height: 50%;">
+						 		</center>
 								<h5>
 						 			<small><s>Kshs.40,000</s></small>
 						 			<span class="price">Kshs 35,000</span>
@@ -88,6 +115,13 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation.</p>
+								<center>
+						 			<img src="resources/iphone7.png" alt="img" style="width: 50%; height: 50%;">
+						 		</center>
+						 		<h5>
+						 			<small><s>Kshs.40,000</s></small>
+						 			<span class="price">Kshs 35,000</span>
+						 		</h5>
 								<!-- More Contents  -->
 								<div class="read-more-content">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -255,78 +289,9 @@
 								</div>
 							</div>
 						<!-- Items end here -->
-						<!-- Items starts here -->
-							<div class="item">
-								<div class="item-inner">
-									<h3>Samsung Galaxy A8</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-								<!-- More Contents  -->
-								<div class="read-more-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-								</div>
-								<!-- end of more details -->
-								<button class="btn" type="button">Order Now</button>
-								</div>
-							</div>
-						<!-- Items end here -->
-						<!-- Items starts here -->
-							<div class="item">
-								<div class="item-inner">
-									<h3>iPhone 7 Plus</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-								<!-- More details -->
-								<div class="read-more-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-									<img src="resources/image.jpg" alt="img">
-									<img src="resources/image.jpg" alt="img">
-
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-								</div>
-								<!-- End more details -->
-								<button class="btn" type="button">Order Now</button>
-								</div>
-							</div>
-						<!-- Items end here -->
-							<!-- Items starts here -->
-							<div class="item">
-								<div class="item-inner">
-									<h3>iPhone 7 Plus</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-								<!-- More details -->
-								<div class="read-more-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-									<img src="resources/image.jpg" alt="img">
-									<img src="resources/image.jpg" alt="img">
-
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation.</p>
-								</div>
-								<!-- End more details -->
-								<button class="btn" type="button">Order Now</button>
-								</div>
-							</div>
-						<!-- Items end here -->
+					
+				
+						
 
 					</div>
 				</div>
